@@ -1,11 +1,9 @@
-//programa que lea n cantidad de numeros enteros e imprima el numero menor y mayor
-
 import javax.swing.JOptionPane;
 
 public class Taller_11 {
     public void leer() {
         int n;
-        n = Integer.parseInt(JOptionPane.showInputDialog("ingrese la cantidad de numeros"));
+        n = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de números"));
         procesar(n);
     }
 
@@ -27,8 +25,9 @@ public class Taller_11 {
         imprimir(men, may, cad);
     }
 
-    public void imprimir(int may, int men, String cad) {
-        JOptionPane.showMessageDialog("S A L I D A\n", "Datos ingresados\n" + cad + "\n",
-                "el numero mayor es : " + may + "\n", "el numero menor es " + men + "\n");
+    public void imprimir(int men, int may, String cad) {
+        JOptionPane.showMessageDialog(null, "S A L I D A\n" + "Datos ingresados\n" + cad + "\n" +
+                "El número mayor es: " + may + "\n" +
+                "El número menor es: " + men + "\n");
     }
 }
