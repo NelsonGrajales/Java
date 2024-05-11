@@ -8,7 +8,7 @@ public class Taller_17 {
         int n = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de elementos del vector: "));
         int nuevoVal;
         int[] vector = new int[n];
-        String cad = "", dad = "";
+        String dad = "";
         for (int x = 0; x < n; x++) {
             vector[x] = Integer.parseInt(JOptionPane.showInputDialog("Vec[" + (x + 1) + "]"));
             if (x == n - 1)
@@ -17,11 +17,10 @@ public class Taller_17 {
                 dad += vector[x] + ",";
         }
         nuevoVal = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de elementos del vector: "));
-        procesar(vector, nuevoVal, n);
-        imprimir(cad, dad);
+        procesar(vector, nuevoVal, n, dad);
     }
 
-    public static String procesar(int vector[], int nuevoVal, int n) {
+    public void procesar(int vector[], int nuevoVal, int n, String dad) {
         int i = n + 1;
         String cad = "";
         int[] nuevoVec = new int[i];
@@ -34,7 +33,7 @@ public class Taller_17 {
                 cad += nuevoVec[i];
             }
         }
-        return cad;
+        imprimir(cad, dad);
     }
 
     public static void imprimir(String cad, String dad) {
