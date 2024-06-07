@@ -9,11 +9,9 @@ public class Leer {
             for (int j = 0; j < n; j++) {
                 matriz[x][j] = Integer.parseInt(
                         JOptionPane.showInputDialog("Ingrese el valor para [" + (x + 1) + "][" + (j + 1) + "]"));
-                if (j == n - 1)
-                    salida += "[" + (matriz[x][j]) + "]" + "\n";
-                else
-                    salida += "[" + (matriz[x][j]) + "]";
+                salida += "[" + (matriz[x][j]) + "]";
             }
+            salida += "\n";
         }
         salida += "\n Matriz de 0 y 1 \n";
         Procesar Main = new Procesar();
