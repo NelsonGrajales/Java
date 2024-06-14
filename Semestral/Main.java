@@ -1,8 +1,5 @@
 import javax.swing.JOptionPane;
 
-//Nelson Grajales 
-//Chris Morales 
-//Yoskar Rivera
 public class Main {
     public static void main(String[] args) {
         Leer Main = new Leer();
