@@ -12,19 +12,18 @@ public class Procesar {
             }
             salida += "\n";
         }
-        salida += "\nMatriz Caracol \n";
+        salida += "\nDiagonal\n";
 
         for (int x = 0; x < n; x++) {
             for (int j = 0; j < n; j++) {
-                if (x == 0 || x == n - 1 || j == 0 || j == n - 1) {
+                if (x == j) {
+                    salida += "**";
+                } else {
                     if (vec[x][j] < 10) {
                         salida += "0" + (vec[x][j]) + " ";
                     } else {
                         salida += " " + (vec[x][j]) + "  ";
-
                     }
-                } else {
-                    salida += "      ";
                 }
 
             }
