@@ -20,7 +20,7 @@ public class Procesar {
                     if (vec[x][j] < 10) {
                         salida += "0" + (vec[x][j]) + " ";
                     } else {
-                        salida += " " + (vec[x][j]) + "  ";
+                        salida += "" + (vec[x][j]) + "  ";
 
                     }
                 } else {
