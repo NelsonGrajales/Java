@@ -17,7 +17,7 @@ public class Procesar {
         for (int x = 0; x < n; x++) {
             for (int j = 0; j < n; j++) {
                 if (x == j) {
-                    salida += "**";
+                    salida += "** ";
                 } else {
                     if (vec[x][j] < 10) {
                         salida += "0" + (vec[x][j]) + " ";
